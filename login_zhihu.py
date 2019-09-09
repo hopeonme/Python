@@ -13,7 +13,8 @@ def get_captcha(data,need_cap):
     with open('captcha.gif','wb') as fb:
         fb.write(data)
     return input('captcha:')
-    
+
+
 def get_signature(grantType,clientId,source,timestamp):
     ''' 处理签名 '''
 	
@@ -62,6 +63,8 @@ def login(username,password,oncaptcha,sessiona,headers):
     
     print("-"*50)
     return resp 
+
+
 
 if __name__ == "__main__":
     sessiona = requests.Session()
