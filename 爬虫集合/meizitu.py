@@ -57,7 +57,7 @@ def execute(url):
 
 def main():
     create_dir('pic')
-    queue = [i for i in range(1, 72)]   # 构造 url 链接 页码。
+    queue = [i for i in range(1, 2)]   # 构造 url 链接 页码。
     threads = []
     while len(queue) > 0:
         for thread in threads:
