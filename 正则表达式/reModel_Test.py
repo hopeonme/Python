@@ -1,4 +1,4 @@
-# 导入re
+# 导入re模块
 import re
 
 def test1():
